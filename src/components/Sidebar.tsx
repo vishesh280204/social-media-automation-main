@@ -18,7 +18,8 @@ const Sidebar = ({isOpen,setIsOpen}: {isOpen: boolean, setIsOpen: (val: boolean)
     { name: "AI Composer", icon: Wand2Icon, path: "/ai-composer" }]
 
   return (
-    <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-white border-r border-slate-200 flex flex-col justify-between h-full transform transition-transform duration-200 ease-in-out md: relative md:translate-x-0 ${isOpen ? "translate-x-0" : "-translate-x-full"}` }>
+    <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-white border-r border-slate-200 flex flex-col justify-between h-full transform transition-transform duration-200 ease-in-out
+    md:relative md:translate-x-0 ${isOpen ? "translate-x-0 " : "-translate-x-full"}`}>
      
       <div >
         {/* Logo */}
