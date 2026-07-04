@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Layout from "./components/Home/Layout";
+import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import Accounts from "./pages/Accounts";
 import AIComposer from "./pages/AIComposer";
