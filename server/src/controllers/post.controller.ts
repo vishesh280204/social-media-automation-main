@@ -142,9 +142,7 @@ export const generatePost=async(req:AuthRequest,res:Response):Promise<void>=>{
 export const getGenerations=async(req:AuthRequest,res:Response):Promise<void>=>{
     try {
         const generations= await Generation.find({user:req.user._id}).sort({createdAt :-1})
-        if(generations.length<1){
-            res.status(404).json({message:"No generation found for the user "})  
-        }
+        
         res.status(200).json(generations)
     } catch (error:any) {
         res.status(500).json({message:`Server error getting generations  ${error.message}`})  
